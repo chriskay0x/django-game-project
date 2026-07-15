@@ -1,0 +1,19 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Climb the Temple Wall</h2>
+
+<p>
+After a difficult climb, you discover a window and a staircase leading to the roof.
+</p>
+
+<a href="{% url 'window' %}">
+    <button>WINDOW</button>
+</a>
+
+<a href="{% url 'roof' %}">
+    <button>ROOF</button>
+</a>
+
+{% endblock %}

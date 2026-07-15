@@ -1,0 +1,15 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Fight the Snake</h2>
+
+<p>
+The battle is fierce, but the snake overpowers you.
+</p>
+
+<a href="{% url 'dead' %}">
+    <button>CONTINUE</button>
+</a>
+
+{% endblock %}

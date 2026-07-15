@@ -1,0 +1,20 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Walk Away</h2>
+
+<p>
+Instead of entering the temple, you discover a wide river.
+How will you cross it?
+</p>
+
+<a href="{% url 'swim' %}">
+    <button>SWIM</button>
+</a>
+
+<a href="{% url 'raft' %}">
+    <button>BUILD RAFT</button>
+</a>
+
+{% endblock %}

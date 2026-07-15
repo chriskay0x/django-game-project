@@ -1,0 +1,15 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Escape</h2>
+
+<p>
+You run as fast as you can and safely escape the snake.
+</p>
+
+<a href="{% url 'start' %}">
+    <button>PLAY AGAIN</button>
+</a>
+
+{% endblock %}

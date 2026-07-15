@@ -1,0 +1,20 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>The Treasure Room</h2>
+
+<p>
+A large golden chest sits in the middle of the room.
+What will you do?
+</p>
+
+<a href="{% url 'treasure' %}">
+    <button>OPEN CHEST</button>
+</a>
+
+<a href="{% url 'leave' %}">
+    <button>LEAVE IT</button>
+</a>
+
+{% endblock %}

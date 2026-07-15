@@ -1,0 +1,21 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Enter the Temple</h2>
+
+<p>
+The temple is dark and silent.
+Two passageways lie ahead.
+Which way will you go?
+</p>
+
+<a href="{% url 'left' %}">
+    <button>LEFT</button>
+</a>
+
+<a href="{% url 'right' %}">
+    <button>RIGHT</button>
+</a>
+
+{% endblock %}

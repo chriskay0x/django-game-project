@@ -1,0 +1,23 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>The Adventure Begins</h2>
+<p>
+    You stand before an ancient temple.
+    What would you like to do?
+</p>
+
+<a href="{% url 'enter' %}">
+    <button>ENTER</button>
+</a>
+
+<a href="{% url 'climb' %}">
+    <button>CLIMB</button>
+</a>
+
+<a href="{% url 'walkaway' %}">
+    <button>WALK AWAY</button>
+</a>
+
+{% endblock %}

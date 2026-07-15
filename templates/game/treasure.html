@@ -1,0 +1,16 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Found the Treasure!</h2>
+
+<p>
+The chest is filled with gold coins and priceless jewels.
+You have become rich!
+</p>
+
+<a href="{% url 'start' %}">
+    <button>PLAY AGAIN</button>
+</a>
+
+{% endblock %}

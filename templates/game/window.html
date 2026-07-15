@@ -1,0 +1,19 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>The Temple Window</h2>
+
+<p>
+You climb through the window and discover an ancient map on a dusty table.
+</p>
+
+<a href="{% url 'take_map' %}">
+    <button>TAKE MAP</button>
+</a>
+
+<a href="{% url 'climb' %}">
+    <button>GO BACK</button>
+</a>
+
+{% endblock %}

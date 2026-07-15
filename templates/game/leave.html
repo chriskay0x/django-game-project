@@ -1,0 +1,16 @@
+{% extends "game/base.html" %}
+
+{% block content %}
+
+<h2>You Leave the Treasure</h2>
+
+<p>
+You decide not to risk opening the mysterious chest.
+You safely leave the room.
+</p>
+
+<a href="{% url 'start' %}">
+    <button>PLAY AGAIN</button>
+</a>
+
+{% endblock %}
